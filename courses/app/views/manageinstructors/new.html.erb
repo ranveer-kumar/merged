@@ -1,0 +1,20 @@
+<h1>Manage Instructors</h1>
+<p>Manage all instructor permissions for your course</p>
+<%= form_for([@manageinstructor.course,@manageinstructor]) do |f| %>
+
+    <div class="field">
+      <%= f.label :Instructor %><br>
+      <%= f.number_field :instructor_id %>
+    </div>
+    <div class="field">
+      <%= f.label :visible %><br>
+      <%= f.check_box :visible %>
+    </div>
+    <div class="field">
+      <%= f.label :edit %><br>
+      <%= f.check_box :edit %>
+    </div>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+<% end %>

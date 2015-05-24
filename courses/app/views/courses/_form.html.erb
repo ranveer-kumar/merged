@@ -1,0 +1,65 @@
+<%= form_for(@course) do |f| %>
+  <% if @course.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@course.errors.count, "error") %> prohibited this course from being saved:</h2>
+
+      <ul>
+      <% @course.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :instructor_id %><br>
+    <%= f.number_field :instructor_id %>
+  </div>
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_area :title %>
+  </div>
+  <div class="field">
+    <%= f.label :subtitle %><br>
+    <%= f.text_area :subtitle %>
+  </div>
+  <div class="field">
+    <%= f.label :objectives %><br>
+    <%= f.text_area :objectives %>
+  </div>
+  <div class="field">
+    <%= f.label :language_id %><br>
+    <%= f.number_field :language_id %>
+  </div>
+  <div class="field">
+    <%= f.label :category_id %><br>
+    <%= f.number_field :category_id %>
+  </div>
+  <div class="field">
+    <%= f.label :subcategory_id %><br>
+    <%= f.number_field :subcategory_id %>
+  </div>
+  <div class="field">
+    <%= f.label :level_id %><br>
+    <%= f.number_field :level_id %>
+  </div>
+  <div class="field">
+    <%= f.label :certificate %><br>
+    <%= f.check_box :certificate %>
+  </div>
+  <div class="field">
+    <%= f.label :lectures %><br>
+    <%= f.text_area :lectures %>
+  </div>
+  <div class="field">
+    <%= f.label :coursecontentjson %><br>
+    <%= f.text_area :coursecontentjson %>
+  </div>
+  <div class="field">
+    <%= f.label :privacy_level %><br>
+    <%= f.number_field :privacy_level %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

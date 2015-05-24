@@ -1,0 +1,2 @@
+module CoursephotosHelper
+end

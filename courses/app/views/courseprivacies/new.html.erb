@@ -1,0 +1,18 @@
+<h1>Course Privacy</h1>
+<p>Choose Who can view your course</p>
+<%= form_for([@courseprivacy.course,@courseprivacy]) do |f| %>
+
+    <div class="field">
+      <%= f.label :Private %><br>
+      <%= f.check_box :private %>
+    </div>
+    <div class="field">
+      <%= f.label :Public %><br>
+      <%= f.check_box :public %>
+    </div>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+<% end %>
+<p>Private Courses are only shareable through a url and cannot be viewed on CourseMantra SearchResults</p>
+

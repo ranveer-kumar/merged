@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  instructor_id: 1
+  title: MyText
+  subtitle: MyText
+  objectives: MyText
+  language_id: 1
+  category_id: 1
+  subcategory_id: 1
+  level_id: 1
+  certificate: false
+  lectures: MyText
+  coursecontentjson: MyText
+  privacy_level: 1
+
+two:
+  instructor_id: 1
+  title: MyText
+  subtitle: MyText
+  objectives: MyText
+  language_id: 1
+  category_id: 1
+  subcategory_id: 1
+  level_id: 1
+  certificate: false
+  lectures: MyText
+  coursecontentjson: MyText
+  privacy_level: 1

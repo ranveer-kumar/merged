@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @course.title %>
+</p>
+
+<p>
+  <strong>Subtitle:</strong>
+  <%= @course.subtitle %>
+</p>
+
+<p>
+  <strong>Objectives:</strong>
+  <%= @course.objectives %>
+</p>
+
+<p>
+  <strong>Language:</strong>
+  <%= @course.language_id %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @course.category_id %>
+</p>
+
+<p>
+  <strong>Subcategory:</strong>
+  <%= @course.subcategory_id %>
+</p>
+
+<p>
+  <strong>Level:</strong>
+  <%= @course.level_id %>
+</p>
+
+<p>
+  <strong>Certificate:</strong>
+  <%= @course.certificate %>
+</p>
+
+<p>
+  <strong>Lectures:</strong>
+  <%= @course.lectures %>
+</p>
+
+<p>
+  <strong>Coursecontentjson:</strong>
+  <%= @course.coursecontentjson %>
+</p>
+
+<p>
+  <strong>Privacy level:</strong>
+  <%= @course.privacy_level %>
+</p>
+
+<%= link_to 'Edit', edit_course_path(@course) %> |
+<%= link_to 'Back', courses_path %>

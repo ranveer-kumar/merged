@@ -1,0 +1,36 @@
+<h1>Price And Coupons</h1>
+<p>Price your course</p>
+<%= form_for([@priceandcoupon.course,@priceandcoupon]) do |f| %>
+
+    <div class="field">
+      <%= f.label :Free %><br>
+      <%= f.check_box :free %>
+    </div>
+    <div class="field">
+      <%= f.label :Paid %><br>
+      <%= f.check_box :paid %>
+    </div>
+    <div class="field">
+      <%= f.label :PriceForIndia %><br>
+      <%= f.number_field :priceforindia ,:step => 'any' %>
+    </div>
+    <div class="field">
+      <%= f.label :discount %><br>
+      <%= f.check_box :discount %>
+    </div>
+    <div class="field">
+      <%= f.label :discountpercent %><br>
+      <%= f.number_field :discountpercent,:step => 'any' %>
+    </div>
+    <div class="field">
+      <%= f.label :PeriodFrom %><br>
+      <%= f.date_select :periodfrom %>
+    </div>
+    <div class="field">
+      <%= f.label :Periodto %><br>
+      <%= f.date_select :periodto %>
+    </div>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+<% end %>

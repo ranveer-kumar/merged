@@ -1,0 +1,41 @@
+<h1>Add New Question</h1>
+<p>Question</p>
+<%= form_for([@question.course,@question]) do |f| %>
+
+    <div class="field">
+      <%= f.label :Question %><br>
+      <%= f.text_area :question_text %>
+    </div>
+    <div class="field">
+      <%= f.label :QuestionDescription %><br>
+      <%= f.text_area :question_desc %>
+    </div>
+    <div class="field">
+      <%= f.label :subtitle %><br>
+      <%= f.text_area :subtitle %>
+    </div>
+    <div class="field">
+      <%= f.label :QuestionType %><br>
+      <%= f.number_field :question_type_id %>
+    </div>q
+    <div class="field">
+      <%= f.label :QuestionGrade %><br>
+      <%= f.number_field :question_grade %>
+    </div>
+    <div class="field">
+      <%= f.label :Randomise %><br>
+      <%= f.check_box :randomise %>
+    </div>
+    <div class="field">
+      <%= f.label :QuestionMedia %><br>
+      <%= f.text_area :question_media %>
+    </div>
+    <div class="field">
+      <%= f.label :AnswerFeedback %><br>
+      <%= f.text_area :answer_feedback %>
+    </div>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+<% end %>
+

@@ -1,0 +1,12 @@
+<h1>Course Photo</h1>
+<p>Add an image to your course</p>
+<%= form_for([@coursephoto.course,@coursephoto]) do |f| %>
+    <div class="field">
+      <%= f.label :photo %><br>
+      <%= f.text_area :photourl %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "Save and Continue"%>
+    </div>
+<% end %>
